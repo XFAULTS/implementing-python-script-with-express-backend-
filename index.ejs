@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <form action="/calculate" method="POST">
+        <label for="numberInput">Enter a number:</label><br>
+        <input type="number" id="numberInput" name="number"><br><br>
+        <button type="submit">Calculate</button>
+    </form>
+
+    <p id="result">
+        <% if (result !== undefined) { %>
+            Result: <%= result %>
+        <% } %>
+    </p>
+</body>
+</html>
